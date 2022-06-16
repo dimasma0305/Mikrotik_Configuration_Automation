@@ -16,4 +16,7 @@ SD_Bridge=  """
             /ip dns set allow-remote-request=yes
             /ip firewall nat add chain=srcnat out-interface=ether1 action=masquerade
             /ip firewall nat print
+            /ip dhcp-server setup
+            /ip dhcp-server enable
+            /ip dhcp-server print
             """
